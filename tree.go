@@ -205,10 +205,7 @@ walk:
 			return
 		}
 
-		// Otherwise add handle to current node
-		if n.handle != nil {
-			panic("a handle is already registered for path '" + fullPath + "'")
-		}
+		// Registering handle for the same path will overwrite the existing handle.
 		n.handle = handle
 		return
 	}
