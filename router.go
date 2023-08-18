@@ -543,3 +543,7 @@ func (r *Router) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 		http.NotFound(w, req)
 	}
 }
+
+func (r *Router) ClearHandlers() {
+	r.trees = nil
+}
