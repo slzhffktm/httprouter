@@ -544,6 +544,7 @@ func (r *Router) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	}
 }
 
+// ClearHandlers remove the tree containing all registered handler functions.
 func (r *Router) ClearHandlers() {
 	r.trees = nil
 }
