@@ -11,6 +11,7 @@ Forked from https://github.com/julienschmidt/httprouter.
 ## Difference
 
 - Registering the same path will overwrite the previous one.
+- `ClearHandlers()` function to remove the tree of handler functions.
 
 ## Features
 
